@@ -4,32 +4,54 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>دستورات گیت</title>
-     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/font-face.css" rel="stylesheet" type="text/css" />
      <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body>
      <div class="container">
-          <h1>دستورات گیت</h1>
-          <h2>آموزش دستورات گیت به همراه توضیحات و مثال</h2>
-          <p>
-               1. init
+          <h1 class="text-center">آموزش دستورات گیت</h1>
 
-               1.1 git init
-               این دستور یک مخزن گیت جدید ایجاد میکنه، به این صورت که یه دایرکتوری جدید به نام git. ایجاد میشه که به عنوان ریپازیتوری گیت شناخته میشه و از این پس میتونید با گیت در این پروژه کار کنید.
+          <div class="command">
+               <h2>دستور git init</h2>
+               <h3>git init</h3>
+               <p>این دستور یک ریپازیتوری جدید گیت ایجاد میکنه، به این صورت که یه دایرکتوری جدید به نام git. ایجاد میشه که به عنوان ریپازیتوری گیت شناخته میشه و از این پس میتونید با گیت در این پروژه کار کنید.</p>
+               <h3>git init DIRECTORY</h3>
+               <p>این دستور مشابه دستور git init عمل میکنه با این تفاوت که ابتدا میاد و یه دایرکتوری به نام DIRECTORY میسازه و روند دستور git init رو در اون دایرکتوری انجام میده.</p>
+               <h3>git init --initial-branch=BRANCH_NAME</h3>
+               <p>این دستور مثل دستور git init عمل میکنه، اما با این تفاوت که یک برنچ اولیه به نام BRANCH_NAME نیز ایجاد میشه.</p>
+               <h3>git init -b BRANCH_NAME</h3>
+               <p>این دستور دقیقا مشابه دستور git init --initial-branch=BRANCH_NAME عمل میکنه اما با کدی کوتاه‌تر.</p>
+               <h3>git init --bare</h3>
+               <p>این دستور یه ریپازیتوری میسازه که نمیشه در اون فایلی رو ویرایش کرد یا تغییری رو کامیت کرد، تنها برای push و pull کردن کاربرد داره. به عنوان ریپازیتوری مرکزی (bare repository) نامگذاری میشه که به ریپازیتوری های non-bare متصل میشه.</p>
+          </div>
 
-               1.2 git init DIRECTORY
-               این دستور مشابه دستور 1.1 عمل میکنه با این تفاوت که ابتدا میاد و یه دایرکتوری به نام DIRECTORY میسازه و روند دستور git init رو در اون دایرکتوری انجام میده.
+          <div class="command">
+               <h2>دستور git config</h2>
+               <h3>git config user.name USERNAME</h3>
+               <p>با این دستور، به گیت میگید که برای ریپازیتوری فعلیتون، یوزرنیم اکانت شما USERNAME هستش.</p>
+               <h3>git config --global user.name USERNAME</h3>
+               <p>با این دستور، به گیت میگید که برای تمام ریپازیتوری هایی که روی سیستم تون دارید، یوزرنیم اکانت شما USERNAME هستش.</p>
+               <h3>git config user.email EMAIL</h3>
+               <p>این دستور مشابه دستور git config user.name USERNAME هستش، با این تفاوت که ایمیل رو مشخص میکنه.</p>
+               <h3>git config --global user.email EMAIL</h3>
+               <p>این دستور مشابه دستور git config --global user.name USERNAME هستش، با این تفاوت که ایمیل رو مشخص میکنه.</p>
+               <h3>git config user.password PASSWORD</h3>
+               <p>این دستور مشابه دستور git config user.name USERNAME هستش، با این تفاوت که پسورد اکانت شما رو مشخص میکنه.</p>
+               <h3>git config --global user.password PASSWORD</h3>
+               <p>این دستور مشابه دستور git config --global user.name USERNAME هستش، با این تفاوت که پسورد اکانت شما رو مشخص میکنه.</p>
+               <h3>git config user.signingkey SIGNING_KEY</h3>
+               <p>با این دستور، به گیت اعلام میکنید که برای این ریپازیتوری، از کلید امضای GPG با مقدار SIGNING_KEY استفاده کن. قبل از استفاده از این دستور، باید کلید امضای GPG خودتونو بسازید.</p>
+               <h3>git config --global user.signingkey SIGNING_KEY</h3>
+               <p>با این دستور، به اعلام میکنید که برای تمام ریپازیتوری هایی که روی سیستم تون دارید، از کلید امضای GPG با مقدار SIGNING_KEY استفاده کن. قبل از استفاده از این دستور، باید کلید امضای GPG خودتونو بسازید.</p>
+               <h3>git config init.defaultBranch BRANCH_NAME</h3>
+               <p>با این دستور، برای گیت مشخص میکنید که برنچ پیش‌فرض ریپازیتوری فعلی تون که به تازگی اون رو init کردید، چی باشه.</p>
+               <h3>git config --global init.defaultBranch BRANCH_NAME</h3>
+               <p>با این دستور، برای گیت مشخص میکنید که برنچ پیش‌فرض برای ریپازیتوری های جدیدی که در آینده میسازید چی باشه.</p>
+          </div>
 
-               1.3 git init --initial-branch=BRANCH_NAME
-               این دستور مثل دستور 1.1 عمل میکنه، اما با این تفاوت که یک برنچ اولیه به نام BRANCH_NAME نیز ایجاد میشه.
-
-               1.4 git init -b BRANCH_NAME
-               این دستور دقیقا مشابه دستور 1.3 عمل میکنه اما با کدی کوتاه‌تر.
-
-               1.5 git init --bare
-               این دستور یک ریپازیتوری ای میسازه که نمیشه در اون فایلی رو ویرایش کرد یا تغییری رو کامیت کرد، تنها برای push و pull کردن کاربرد داره. به عنوان ریپازیتوری مرکزی (bare repository) نامگذاری میشه که به ریپازیتوری های non-bare متصل میشه.
-
-          </p>
+          <div class="copyright text-center">
+               توسط علی هوشیاری پور
+          </div>
      </div>
 </body>
 </html>
