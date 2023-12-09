@@ -1,15 +1,45 @@
 <svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+      <link href="./Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
       <style>
-        body {
-          font-family: Vazirmatn, sans-serif;
+        .container {
+					font-family: Vazirmatn, sans-serif;
+					display: flex;
+					flex-direction: column;
+					align-items: right;
+					justify-content: right;
+					text-align: right;
+					margin: 0;
+					width: 100%;
+					height: auto;
+				}
+        p {
+          text-align: right;
+          direction: rtl;
         }
       </style>
       <div class="container">
         <h1>دستورات گیت</h1>
-        <p>آموزش دستورات گیت به همراه توضیحات و مثال</p>
+        <h2>آموزش دستورات گیت به همراه توضیحات و مثال</h2>
+
+        <p>1. init</p>
+
+        <p>1.1 git init</p>
+        <p>این دستور یک مخزن گیت جدید ایجاد میکنه، به این صورت که یه دایرکتوری جدید به نام git. ایجاد میشه که به عنوان ریپازیتوری گیت شناخته میشه و از این پس میتونید با گیت در این پروژه کار کنید.</p>
+
+        <p>1.2 git init DIRECTORY</p>
+        <p>این دستور مشابه دستور 1.1 عمل میکنه با این تفاوت که ابتدا میاد و یه دایرکتوری به نام DIRECTORY میسازه و روند دستور git init رو در اون دایرکتوری انجام میده.</p>
+
+        <p>1.3 git init --initial-branch=BRANCH_NAME</p>
+        <p>این دستور مثل دستور 1.1 عمل میکنه، اما با این تفاوت که یک برنچ اولیه به نام BRANCH_NAME نیز ایجاد میشه.</p>
+
+        <p>1.4 git init -b BRANCH_NAME</p>
+        <p>این دستور دقیقا مشابه دستور 1.3 عمل میکنه اما با کدی کوتاه‌تر.</p>
+
+        <p>1.5 git init --bare</p>
+        <p>این دستور یک ریپازیتوری ای میسازه که نمیشه در اون فایلی رو ویرایش کرد یا تغییری رو کامیت کرد، تنها برای push و pull کردن کاربرد داره. به عنوان ریپازیتوری مرکزی (bare repository) نامگذاری میشه که به ریپازیتوری های non-bare متصل میشه.</p>
+
       </div>
     </div>
   </foreignObject>
