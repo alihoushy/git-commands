@@ -1,0 +1,16 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+      <style>
+        body {
+          font-family: Vazirmatn, sans-serif;
+        }
+      </style>
+      <div class="container">
+        <h1>دستورات گیت</h1>
+        <p>آموزش دستورات گیت به همراه توضیحات و مثال</p>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
